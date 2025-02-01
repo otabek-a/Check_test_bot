@@ -36,7 +36,7 @@ def send_test(update, context):
 
     if ' ' not in javob and javob.islower(): 
         res[son] = javob
-        result_text = "\n".join([f"Son: {key}, Javob: {value}" for key, value in res.items()])
+        result_text = "\n".join([f"Son: {key}, " for key, value in res.items()])
         update.message.reply_text(f"Javob qabul qilindi! Hozirgi barcha testlar:\n{result_text}")
         son += 1 
     elif javob !='Check_test':
