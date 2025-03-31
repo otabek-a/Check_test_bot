@@ -86,7 +86,7 @@ def sasha(update,context):
 
 
 
-updater = Updater(token=os.environ['TOKEN'])
+updater = Updater(token='7859634629:AAFnRxOvewByjs9FP1JH8oI8Dkn0iVYunfY')
 dispatcher = updater.dispatcher
 dispatcher.add_handler(MessageHandler(Filters.text('all answer band'),sasha))
 dispatcher.add_handler(CommandHandler('start', start))
